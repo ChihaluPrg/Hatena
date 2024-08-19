@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <span class="title_text">Q: タイトルをここに入力</span>
+    </div>
+
+    <section class="sec">
+
+        <div class="a-list">
+            <ul class="a-ul">
+                <li class="a-li">
+                    <span class="toggle-button">質問や項目1をここに入力</span>
+                    <div class="details">
+                        回答や詳細1をここに入力
+                    </div>
+                </li>
+                <li class="a-li">
+                    <span class="toggle-button">質問や項目2をここに入力</span>
+                    <div class="details">
+                        回答や詳細2をここに入力
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <a class="home" href="/index.html">ホームに戻る</a>
+    </div>
+
+    <div class="lasts">
+        <span class="last">最終更新日: 日付をここに入力</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q2.css">
+    <title>システムアップデートとは？</title>
+</head>
+<body>
+    
+
+    <div class="title">
+        <span class="title_text">Q2：システムアップデートとは？</span>
+    </div>
+
+    <section class="sec">
+
+        <div class="a-list">
+            <p class="upd">大きなアップデート</p>
+            <ul class="a-ul">
+                <li class="a-li-1">
+                    <span class="toggle-button">何をする？</span>
+                    <div class="details">
+                        スマホの基本的な部分が大きく変わるアップデートです。<br><br>新しい機能やデザインが追加されます。
+                    </div>
+                </li>
+                <li class="a-li-2">
+                    <span class="toggle-button">どれくらいの頻度？</span>
+                    <div class="details">
+                        年に1回程度、主要なアップデートがリリースされます。
+                    </div>
+                </li>
+                <li class="a-li-3">
+                    <span class="toggle-button">どんなことがある？</span>
+                    <div class="details">
+                        新しい機能や大幅な改善が含まれます。
+                    </div>
+                </li>
+                <p class="upd">小さなアップデート</p>
+                <li class="a-li-1">
+                    <span class="toggle-button">何をする？</span>
+                    <div class="details">
+                        スマホのちょっとした問題やセキュリティの穴を修正します。
+                    </div>
+                </li>
+                <li class="a-li-2">
+                    <span class="toggle-button">どれくらいの頻度？</span>
+                    <div class="details">
+                        よくあることです。たとえば「セキュリティアップデートが利用可能」と通知が来ることがあります。
+                    </div>
+                </li>
+                <li class="a-li-3">
+                    <span class="toggle-button">どんなことがある？</span>
+                    <div class="details">
+                        アプリがうまく動かない問題を直したり、スマホがもっと安全になるようにします。
+                    </div>
+                </li>
+                <p class="upd">注意点</p>
+                <li class="a-li-4">
+                    <span class="toggle-button">インターネット接続</span>
+                    <div class="details">
+                        アップデートをダウンロードするには、Wi-Fiなどのインターネット接続が必要です。
+                        <br>モバイルデータを使うと、データ通信量が多くなり、追加料金がかかることがあります。
+                    </div>
+                </li>
+                <li class="a-li-5">
+                    <span class="toggle-button">充電状態</span>
+                    <div class="details">
+                        アップデート中にスマホのバッテリーが切れると、アップデートが失敗する可能性があります。
+                    </div>
+                </li>
+                <li class="a-li-6">
+                    <span class="toggle-button">ストレージの空き</span>
+                    <div class="details">
+                        アップデートをダウンロードしてインストールするためには、スマホに一定の空き容量が必要です。
+                    </div>
+                </li>
+                <li class="a-li-7">
+                    <span class="toggle-button">アップデートの時間</span>
+                    <div class="details">
+                        アップデートには時間がかかることがあります。この間、スマホが使えなくなることがあります。
+                    </div>
+                </li>
+                <li class="a-li-8">
+                    <span class="toggle-button">アプリの互換性</span>
+                    <div class="details">
+                        新しいバージョンのAndroidにアップデートすると、一部のアプリがうまく動かなくなることがあります。
+                        <br>アップデート後にアプリが正常に動作するか確認し、必要ならアプリのアップデートも行いましょう。
+                    </div>
+                </li>
+            </ul>
+            <ul class="note">
+                
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <a class="home" href="/index.html">ホームに戻る</a>
+    </div>
+    
+    <div class="lasts">
+        <span class="last">最終更新日：2024年7月27日</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

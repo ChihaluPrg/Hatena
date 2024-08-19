@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズ</title>
+    <style>
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>クイズに答えてください:</h2>
+    
+    <form id="quizForm">
+        <p>質問1: クイズは楽しいですか？</p>
+        <input type="radio" name="question1" value="correct" id="q1yes">
+        <label for="q1yes">はい</label>
+        <input type="radio" name="question1" value="incorrect" id="q1no">
+        <label for="q1no">いいえ</label>
+
+        <p>質問2: JavaScriptはウェブサイトに使われますか？</p>
+        <input type="radio" name="question2" value="correct" id="q2yes">
+        <label for="q2yes">はい</label>
+        <input type="radio" name="question2" value="incorrect" id="q2no">
+        <label for="q2no">いいえ</label>
+
+        <p>質問3: HTMLはプログラミング言語ですか？</p>
+        <input type="radio" name="question3" value="incorrect" id="q3yes">
+        <label for="q3yes">はい</label>
+        <input type="radio" name="question3" value="correct" id="q3no">
+        <label for="q3no">いいえ</label>
+
+        <p>質問4: CSSはスタイルシート言語ですか？</p>
+        <input type="radio" name="question4" value="correct" id="q4yes">
+        <label for="q4yes">はい</label>
+        <input type="radio" name="question4" value="incorrect" id="q4no">
+        <label for="q4no">いいえ</label>
+
+        <p>質問5: パイソンは蛇の名前ですか？</p>
+        <input type="radio" name="question5" value="incorrect" id="q5yes">
+        <label for="q5yes">はい</label>
+        <input type="radio" name="question5" value="correct" id="q5no">
+        <label for="q5no">いいえ</label>
+
+        <p>質問6: JavaとJavaScriptは同じ言語ですか？</p>
+        <input type="radio" name="question6" value="incorrect" id="q6yes">
+        <label for="q6yes">はい</label>
+        <input type="radio" name="question6" value="correct" id="q6no">
+        <label for="q6no">いいえ</label>
+
+        <p>質問7: HTMLの意味はHyperText Markup Languageですか？</p>
+        <input type="radio" name="question7" value="correct" id="q7yes">
+        <label for="q7yes">はい</label>
+        <input type="radio" name="question7" value="incorrect" id="q7no">
+        <label for="q7no">いいえ</label>
+
+        <p>質問8: CSSはCascading Style Sheetsの略ですか？</p>
+        <input type="radio" name="question8" value="correct" id="q8yes">
+        <label for="q8yes">はい</label>
+        <input type="radio" name="question8" value="incorrect" id="q8no">
+        <label for="q8no">いいえ</label>
+
+        <p>質問9: Webページの見た目を決定するのはCSSですか？</p>
+        <input type="radio" name="question9" value="correct" id="q9yes">
+        <label for="q9yes">はい</label>
+        <input type="radio" name="question9" value="incorrect" id="q9no">
+        <label for="q9no">いいえ</label>
+
+        <p>質問10: Javaはオブジェクト指向言語ですか？</p>
+        <input type="radio" name="question10" value="correct" id="q10yes">
+        <label for="q10yes">はい</label>
+        <input type="radio" name="question10" value="incorrect" id="q10no">
+        <label for="q10no">いいえ</label>
+
+        <p>質問11: 関数は再利用可能なコードブロックですか？</p>
+        <input type="radio" name="question11" value="correct" id="q11yes">
+        <label for="q11yes">はい</label>
+        <input type="radio" name="question11" value="incorrect" id="q11no">
+        <label for="q11no">いいえ</label>
+
+        <p>質問12: JavaScriptはサーバーサイドで使用されますか？</p>
+        <input type="radio" name="question12" value="correct" id="q12yes">
+        <label for="q12yes">はい</label>
+        <input type="radio" name="question12" value="incorrect" id="q12no">
+        <label for="q12no">いいえ</label>
+
+        <p>質問13: CSSはJavaScriptの一部ですか？</p>
+        <input type="radio" name="question13" value="incorrect" id="q13yes">
+        <label for="q13yes">はい</label>
+        <input type="radio" name="question13" value="correct" id="q13no">
+        <label for="q13no">いいえ</label>
+
+        <p>質問14: DOMはDocument Object Modelの略ですか？</p>
+        <input type="radio" name="question14" value="correct" id="q14yes">
+        <label for="q14yes">はい</label>
+        <input type="radio" name="question14" value="incorrect" id="q14no">
+        <label for="q14no">いいえ</label>
+
+        <p>質問15: クッキーはユーザー情報を保存しますか？</p>
+        <input type="radio" name="question15" value="correct" id="q15yes">
+        <label for="q15yes">はい</label>
+        <input type="radio" name="question15" value="incorrect" id="q15no">
+        <label for="q15no">いいえ</label>
+
+        <p>質問16: HTMLファイルの拡張子は".htm"ですか？</p>
+        <input type="radio" name="question16" value="correct" id="q16yes">
+        <label for="q16yes">はい</label>
+        <input type="radio" name="question16" value="incorrect" id="q16no">
+        <label for="q16no">いいえ</label>
+
+        <p>質問17: JSONはJavaScript Object Notationの略ですか？</p>
+        <input type="radio" name="question17" value="correct" id="q17yes">
+        <label for="q17yes">はい</label>
+        <input type="radio" name="question17" value="incorrect" id="q17no">
+        <label for="q17no">いいえ</label>
+
+        <p>質問18: APIはApplication Programming Interfaceの略ですか？</p>
+        <input type="radio" name="question18" value="correct" id="q18yes">
+        <label for="q18yes">はい</label>
+        <input type="radio" name="question18" value="incorrect" id="q18no">
+        <label for="q18no">いいえ</label>
+
+        <p>質問19: HTMLの最新バージョンはHTML5ですか？</p>
+        <input type="radio" name="question19" value="correct" id="q19yes">
+        <label for="q19yes">はい</label>
+        <input type="radio" name="question19" value="incorrect" id="q19no">
+        <label for="q19no">いいえ</label>
+
+        <p>質問20: CSS3は最新のCSSバージョンですか？</p>
+        <input type="radio" name="question20" value="correct" id="q20yes">
+        <label for="q20yes">はい</label>
+        <input type="radio" name="question20" value="incorrect" id="q20no">
+        <label for="q20no">いいえ</label>
+
+        <input type="submit" value="送信">
+    </form>
+
+    <div class="result" id="result"></div>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // 正しい答えの数を数える
+            let correctAnswers = 0;
+            const totalQuestions = 20; // 質問の数をここに入力してください
+
+            if (document.querySelector('input[name="question1"]:checked')?.value === "correct") {
+                correctAnswers++;
+            }
+
+            if (document.querySelector('input[name="question2"]:checked')?.value === "correct") {
+                correctAnswers++;
+            }
+
+            // 正解率を計算
+            const score = (correctAnswers / totalQuestions) * 100;
+            let message = '';
+
+            if (score >= 90) {
+                message = '素晴らしいです！';
+            } else if (score >= 70) {
+                message = 'とても良いです！';
+            } else if (score >= 50) {
+                message = '良い結果です！';
+            } else if (score >= 30) {
+                message = 'もう少し頑張りましょう！';
+            } else if (score >= 10) {
+                message = '頑張ってください！';
+            } else {
+                message = 'もっと練習が必要です。';
+            }
+
+            // 結果を表示
+            document.getElementById('result').textContent = `あなたの正解率は ${score}% です。${message}`;
+        });
+    </script>
+</body>
+</html>

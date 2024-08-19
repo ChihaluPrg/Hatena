@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <span class="title_text">Q: アプリのアップデートについて</span>
+    </div>
+
+    <section class="sec">
+
+        <div class="a-list">
+            <ul class="a-ul">
+                <li class="a-li">
+                    <span class="toggle-button">アップデートの理由</span>
+                    <div class="details">
+                        <p>新機能の追加、バグ修正、パフォーマンス改善など</p>
+                    </div>
+                </li>
+                <li class="a-li">
+                    <span class="toggle-button">アップデートの手順</span>
+                    <div class="details">
+                        <p>①Playストアを開く<br>②右上の丸いアイコンをタップ<br>③アプリとデバイスの管理をタップ<br>④利用可能なアップデートをタップ
+                        <br>⑤任意のアプリをアップデートする</p>
+                    </div>
+                </li>
+                <li class="a-li">
+                    <span class="toggle-button">注意点</span>
+                    <div class="details">
+                        <p>①Wi-Fi接続：アップデートはデータ量が多いため、Wi-Fi接続で行うとデータ通信料を節約できます。<br>
+                            ②動作不良：互換性の問題でアプリが正常に動作しなくなることがあります。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <a class="home" href="/index.html">ホームに戻る</a>
+    </div>
+
+    <div class="lasts">
+        <span class="last">最終更新日: 2024年7月31日</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q5.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <span class="title_text">Q: パスワードを忘れてしまった</span>
+    </div>
+
+    <section class="sec">
+
+        <div class="a-list">
+            <ul class="a-ul">
+                <li class="a-li">
+                    <span class="toggle-button">再設定を行う</span>
+                    <div class="details">
+                        メールアドレスを覚えていたら再設定をして下さい。
+                    </div>
+                </li>
+                <li class="a-li">
+                    <span class="toggle-button">忘れた時用の対策</span>
+                    <div class="details">
+                        ログイン情報を保存出来るアプリを使用すると忘れても問題ありません。
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <a class="home" href="/index.html">ホームに戻る</a>
+    </div>
+
+    <div class="lasts">
+        <span class="last">最終更新日: 2024年8月2日</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

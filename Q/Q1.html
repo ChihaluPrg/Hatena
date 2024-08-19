@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="title">
+        <span class="title_text">Q1：メールが届かない</span>
+    </div>
+
+    <section class="sec">
+
+        <div class="a-list">
+            <ul class="a-ul">
+                <li class="a-li-1">
+                    <span class="toggle-button">⑴ バッテリーの節約機能や最適化機能がオンになっている</span>
+                    <div class="details">
+                        バッテリー節約モードやデバイスの最適化機能が有効になっていると、バックグラウンドでのアプリの動作が制限されることがあります。これにより、メールのプッシュ通知が遅れたり受信されなかったりすることがあります。設定を見直し、必要に応じて特定のアプリの最適化を解除することをお勧めします。
+                    </div>
+                </li>
+                <li class="a-li-2">
+                    <span class="toggle-button">⑵ メールアプリを起動して、上から下へスワイプして更新する</span>
+                    <div class="details">
+                        メールアプリを手動で更新する方法です。アプリを起動し、画面上部から下にスワイプすることで新しいメールを取得できます。プッシュ通知がうまく動作しない場合、この方法で最新のメールを確認してください。
+                    </div>
+                </li>
+                <li class="a-li-3">
+                    <span class="toggle-button">⑶ メールアプリを開かないと通知が届かないことがある</span>
+                    <div class="details">
+                        一部のメールアプリやデバイスでは、アプリがバックグラウンドで完全に閉じられているとプッシュ通知が機能しないことがあります。アプリを開いてアクティブにすることで、通知が再び正常に届くようになります。
+                    </div>
+                </li>
+                <li class="a-li-4">
+                    <span class="toggle-button">⑷ 迷惑メールフォルダを確認する</span>
+                    <div class="details">
+                        重要なメールが誤って迷惑メールフォルダに振り分けられることがあります。定期的に迷惑メールフォルダを確認し、必要に応じて誤って振り分けられたメールを受信トレイに移動してください。
+                    </div>
+                </li>
+                <li class="a-li-5">
+                    <span class="toggle-button">⑸ 「全ての受信トレイ」に切り替えて確認する</span>
+                    <div class="details">
+                        メールアプリの表示設定が特定のフォルダに限定されている場合、他のフォルダに届いたメールが見逃されることがあります。「全ての受信トレイ」ビューに切り替えることで、すべてのメールアカウントやフォルダに届いた新しいメールを一括で確認することができます。
+                    </div>
+                </li>
+                <li class="a-li-6">
+                    <span class="toggle-button">⑹ メールアカウントの同期設定を確認する</span>
+                    <div class="details">
+                        デバイスやメールアプリの同期設定がオフになっていると、メールの受信が遅れることがあります。設定メニューからメールアカウントの同期が有効になっているか確認し、必要に応じて再設定してください。
+                    </div>
+                </li>
+                <li class="a-li-7">
+                    <span class="toggle-button">⑺ アプリのキャッシュをクリアする</span>
+                    <div class="details">
+                        メールアプリのキャッシュが溜まりすぎると、正常な動作を妨げることがあります。アプリの設定メニューからキャッシュをクリアすることで、パフォーマンスが改善されることがあります。
+                    </div>
+                </li>
+                <li class="a-li-8">
+                    <span class="toggle-button">⑻ デバイスの再起動を試みる</span>
+                    <div class="details">
+                        デバイスの動作が不安定な場合、再起動することで問題が解消されることがあります。デバイスを再起動してから、メールアプリの動作を再確認してください。
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <a class="home" href="/index.html">ホームに戻る</a>
+    </div>
+
+    <div class="lasts">
+        <span class="last">最終更新日：2024年7月27日</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

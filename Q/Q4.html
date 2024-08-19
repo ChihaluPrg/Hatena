@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title">
+        <span class="title_text">Q: 間違えて写真を消してしまった</span>
+    </div>
+
+    <section class="sec">
+        
+        <!-- 
+        <div class="answer">
+            <span class="answer-video"><a href="#">動画で見る</a></span>
+        </div>
+        -->
+
+        <div class="a-list">
+            <ul class="a-ul">
+                <li class="a-li">
+                    <span class="toggle-button">ゴミ箱の確認</span>
+                    <div class="details">
+                        アプリを開いて「ゴミ箱」を確認します。削除から30日以内であれば、ここから復元できます。
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <a class="home" href="/index.html">ホームに戻る</a>
+    </div>
+
+    <div class="lasts">
+        <span class="last">最終更新日: 2024年8月1日</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const details = this.nextElementSibling;
+                    details.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

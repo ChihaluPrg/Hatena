@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(233, 103, 43);
+}
+
+body {
+    background-color: rgb(255, 199, 136);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(255, 199, 136);
+}
+
+.answer {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.a-list {
+    margin-top: 50px;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(255, 225, 159);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10%;
+}
+
+.a-ul {
+    padding: 0;
+}
+
+.details {
+    display: none; /* 初期状態では非表示 */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.details.show {
+    display: block; /* showクラスが追加されると表示 */
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none; /* 下線を消す */
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.lasts {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.redirect-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.redirect-button:hover {
+    background-color: #0056b3;
+}
+
+.home {
+    padding: 10px;
+    background-color: #72d2f8;
+    border-radius: 5%;
+    margin-left: 23px;
+    color: #007bff;
+    font-weight: bold
+}
